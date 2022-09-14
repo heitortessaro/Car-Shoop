@@ -1,6 +1,6 @@
 export enum ErrorTypes {
   EntityNotFound = 'EntityNotFound',
-  INvalidMongoId = 'InvalidMongoId',
+  InvalidMongoId = 'InvalidMongoId',
 }
 
 // obj used to construct the API response
