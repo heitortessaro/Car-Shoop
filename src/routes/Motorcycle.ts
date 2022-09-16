@@ -9,7 +9,7 @@ const motorcycle = new MotorcycleModel();
 const motorcycleService = new MotorcycleService(motorcycle);
 const motorcycleController = new MotorcycleController(motorcycleService);
 
-const baseRoute = '/motorcycle';
+const baseRoute = '/motorcycles';
 
 route.post(baseRoute, (req: Request, res: Response) =>
   motorcycleController.create(req, res));
