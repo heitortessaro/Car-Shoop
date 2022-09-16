@@ -1,5 +1,5 @@
 import { model as mongooseCreateModel, Schema } from 'mongoose';
-import { ICar } from '../interfaces/ICar';
+import { IMotorcycle } from '../interfaces/IMotorcycle';
 import MongoModel from './MongoModel';
 
 // O Mongoose solicita que, ao criarmos um model 
@@ -10,20 +10,20 @@ import MongoModel from './MongoModel';
 // instanciado, podermos ter acesso a todos os métodos e 
 // atributos disponíveis para usarmos.
 
-const carMongooseSchema = new Schema<ICar>({
+const motorcycleMongooseSchema = new Schema<IMotorcycle>({
   model: String,
   year: Number,
   color: String,
   status: Boolean,
   buyValue: Number,
-  doorsQty: Number,
-  seatsQty: Number,
+  category: String,
+  engineCapacity: Number,
 }, { versionKey: false });
 
-class Car extends MongoModel<ICar> {
-  constructor(model = mongooseCreateModel('Car', carMongooseSchema)) {
+class Motorcycle extends MongoModel<IMotorcycle> {
+  constructor(model = mongooseCreateModel('Motorcycle', motorcycleMongooseSchema)) {
     super(model);
   }
 }
 
-export default Car;
+export default Motorcycle;
