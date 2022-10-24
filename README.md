@@ -1,4 +1,4 @@
-# Trybe Futebol Clube!
+# Car Shoop!
 
 Esse é o projeto desenvolve uma API com CRUD para gerenciar uma concessionária de veículos. Nesse projeto foram aplicados conceitor de Programação Orientada a Objetos (POO) e SOLID. Tambeḿ foram desenvolvidos testes unitários para as camadas de Model, Service buscando desenvolver o projeto utilizando a metodologia TDD. Além disso foi utilizado o banco de dados MongoDB e o ORM Mongoose.
 
